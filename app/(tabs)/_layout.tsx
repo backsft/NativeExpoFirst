@@ -5,7 +5,7 @@ import { Ionicons } from "@expo/vector-icons";
 
 export default function TabLayout() {
   return (
-    <Tabs screenOptions={{ tabBarShowLabel: false }}>
+    <Tabs screenOptions={{ tabBarShowLabel: false ,headerShown:false}}>
       {/* Home Tab */}
       <Tabs.Screen 
         name="index" 
@@ -33,7 +33,7 @@ export default function TabLayout() {
         options={{ 
           title: "Create",
           tabBarIcon: ({ size, color }) => (
-            <Ionicons name="add-circle" size={size} color={color} />
+            <Ionicons name="add-circle" size={size} color={"green"} />
           ),
         }} 
       />
