@@ -1,20 +1,6 @@
-import { Pressable, Text, TouchableOpacity, View } from "react-native";
+import React from 'react'
+import { Redirect } from 'expo-router'
 
-export default function Index() {
-  return (
-    <View
-      style={{
-        flex: 1,
-        justifyContent: "center",
-        alignItems: "center",
-      }}
-    >
-      <Text>Hello</Text>
-
-        <TouchableOpacity onPress={()=>alert("you touch me")}> <Text>Touch me</Text></TouchableOpacity>
-
-        <Pressable onPress={()=>alert("you Pressed me")}> <Text>Press me</Text></Pressable>
-
-    </View>
-  );
+export default function index() {
+  return <Redirect href={"/(tabs)"} />;
 }
